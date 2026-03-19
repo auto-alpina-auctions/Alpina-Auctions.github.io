@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dealership</title>
+    <title>Alpina Auctions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header id="home">
         <nav>
+            <div class="nav-brand">Alpina Auctions</div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#featured">Featured Vehicles</a></li>
@@ -16,8 +20,9 @@
             </ul>
         </nav>
         <div class="hero">
-            <h1>Welcome to Our Dealership</h1>
-            <p>Find your dream car today!</p>
+            <h1>Welcome to Alpina Auctions</h1>
+            <p>We make the car-buying experience simple, smooth, and stress-free.</p>
+            <a href="#featured" class="btn">View Auctions</a>
         </div>
     </header>
 
@@ -26,19 +31,28 @@
             <h2>Featured Vehicles</h2>
             <div class="vehicles">
                 <div class="vehicle">
-                    <img src="car1.jpg" alt="Car 1">
-                    <h3>Car Model 1</h3>
-                    <p>Price: $20,000</p>
+                    <img src="car1.jpg" alt="2024 BMW Alpina B7">
+                    <div class="vehicle-info">
+                        <h3>2024 BMW Alpina B7</h3>
+                        <p class="price">Starting Bid: $85,000</p>
+                        <a href="#contact" class="btn btn-outline">Place Bid</a>
+                    </div>
                 </div>
                 <div class="vehicle">
-                    <img src="car2.jpg" alt="Car 2">
-                    <h3>Car Model 2</h3>
-                    <p>Price: $25,000</p>
+                    <img src="car2.jpg" alt="2023 BMW Alpina B4 Gran Coupe">
+                    <div class="vehicle-info">
+                        <h3>2023 BMW Alpina B4 Gran Coupe</h3>
+                        <p class="price">Starting Bid: $72,000</p>
+                        <a href="#contact" class="btn btn-outline">Place Bid</a>
+                    </div>
                 </div>
                 <div class="vehicle">
-                    <img src="car3.jpg" alt="Car 3">
-                    <h3>Car Model 3</h3>
-                    <p>Price: $30,000</p>
+                    <img src="car3.jpg" alt="2024 BMW Alpina D3 Touring">
+                    <div class="vehicle-info">
+                        <h3>2024 BMW Alpina D3 Touring</h3>
+                        <p class="price">Starting Bid: $65,000</p>
+                        <a href="#contact" class="btn btn-outline">Place Bid</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -46,7 +60,7 @@
 
     <footer id="contact">
         <h2>Contact Us</h2>
-        <p>Email: info@dealership.com</p>
+        <p>Email: <a href="mailto:info@alpina-auctions.com">info@alpina-auctions.com</a></p>
         <p>Phone: (123) 456-7890</p>
     </footer>
 </body>
